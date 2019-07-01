@@ -1,0 +1,111 @@
+2019-07-01T09:40:14+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:243
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\files\css\global-css.php(123): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 243
+
+2019-07-01T09:47:54+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:243
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\files\css\global-css.php(123): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 243
+
+2019-07-01T09:49:59+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:243
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\files\css\global-css.php(123): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 243
+
+2019-07-01T09:54:17+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:243
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\files\css\global-css.php(123): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 243
+
+2019-07-01T09:54:20+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:243
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\files\css\global-css.php(123): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 243
+
+2019-07-01T10:05:53+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:158
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(258): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 158
+
+2019-07-01T10:07:04+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:158
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\files\css\global-css.php(123): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 158
+
+2019-07-01T10:10:20+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:120
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(258): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 120
+
+2019-07-01T10:16:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Elementor\Widgets_Manager::register_widget_type(), 0 passed in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 120 and exactly 1 expected in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php:189
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php(120): Elementor\Widgets_Manager->register_widget_type()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#5 F:\xampp\htdocs\ in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php on line 189
+
+2019-07-01T10:20:43+00:00 CRITICAL require_once(): Failed opening required 'F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce/controls/test-control.php' (include_path='F:\xampp\php\PEAR') in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 259
+
+2019-07-01T10:21:40+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:243
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Elementor_Test_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(258): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elemen in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 243
+
+2019-07-01T10:22:31+00:00 CRITICAL Uncaught Error: Class 'Elementor_Test_Widget' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php:120
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Avocado_Commerce_Extension->init_widgets(Object(Elementor\Widgets_Manager))
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(99): do_action('elementor/widge...', Object(Elementor\Widgets_Manager))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(235): Elementor\Widgets_Manager->init_widgets()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(258): Elementor\Widgets_Manager->get_widget_types()
+#6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 120
+
