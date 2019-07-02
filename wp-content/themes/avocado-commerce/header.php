@@ -23,36 +23,76 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'avocado-commerce' ); ?></a>
+	<div class="container">
+		<div class="row">
+			<div class="col">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$avocado_commerce_description = get_bloginfo( 'description', 'display' );
-			if ( $avocado_commerce_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $avocado_commerce_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+				<div class="site-warp">
+				
+				<header id="masthead" class="site-header">
+					<div class="container ">
+						<div class="row header-top">
+							<div class="col">	
+								<span class="header-top-element">+88 (0) 145 2589 000</span>
+								<span class="header-top-element">+88 (0) 145 2589 000</span>
+							</div>
+							<div class="col text-right">	
+								<span class="header-to-right">Eng</span>
+								<span class="header-to-right">Currency</span>
+							</div>
+						</div>
+						<div class="row header-botton">	
+							<div class="col my-auto">	
+								<div class="social-links">
+									<a href=""><i class="fa fa-facebook"></i></a>
+									<a href=""><i class="fa fa-twitter"></i></a>	
+									<a href=""><i class="fa fa-youtube"></i></a>
+									<a href=""><i class="fa fa-linkedin"></i></a>
+									
+								</div>
+							</div>
+							<div class="col my-auto text-center">	
+								<a href="<?php echo esc_url(home_url('/'));?>" class="logo d-block">
+									<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="">
+									<p>the food that is cooked with love</p>
+								</a>
+							</div>
+							<div class="col my-auto text-right header-right">	
+								<a href=""><img src="<?php echo get_template_directory_uri();?>/assets/img/user-icon.png" alt=""></a>
+								<a href=""><img src="<?php echo get_template_directory_uri();?>/assets/img/heart-icon.png" alt=""></a>
+								<a href=""><span class="cart-count">12</span><img src="<?php echo get_template_directory_uri();?>/assets/img/cart-icon.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'avocado-commerce' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+					<nav id="site-navigation" class="main-navigation">
+						<div class="container">	
+							<div class="row">
+								<div class="col my-auto">	
+									<?php
+									wp_nav_menu( array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'primary-menu',
+									) );
+									?>
+								</div>
+								<div class="col my-auto text-right">	
+									<div class="menu-right-icon">	
+									  	<span class="search-triger"><i class="fa fa-search"></i></span>
+									</div>
+							   </div>
+							</div>
+						</div>
+						
+					</nav><!-- #site-navigation -->
+				</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+            <div id="content" class="site-content">
+				<div class="container">
+					<div class="row">
+						<div class="col">	
+
+						</div>
+					</div>
+				</div>

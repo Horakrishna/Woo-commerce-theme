@@ -121,7 +121,16 @@ add_action( 'widgets_init', 'avocado_commerce_widgets_init' );
  */
 function avocado_commerce_scripts() {
 
-	wp_enqueue_style('bootstrap', get_template_directory_uri() . 'assets/css/bootstrap.min.css');
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '20151215' );
+	wp_enqueue_style( 'avocado-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/7c13097494.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'jquery');
+
+	wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20151215', true );
+	
 	wp_enqueue_style( 'avocado-commerce-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'avocado-commerce-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

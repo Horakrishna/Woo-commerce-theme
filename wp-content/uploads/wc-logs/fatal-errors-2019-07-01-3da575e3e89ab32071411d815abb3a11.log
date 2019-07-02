@@ -109,3 +109,27 @@ Stack trace:
 #5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(258): Elementor\Widgets_Manager->get_widget_types()
 #6 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elem in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\index.php on line 120
 
+2019-07-01T19:20:26+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_dicrectory_uri() in F:\xampp\htdocs\Woocommerce theme\wp-content\themes\avocado-commerce\header.php:56
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\template.php(722): require_once()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\template.php(671): load_template('F:\\xampp\\htdocs...', true)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\themes\avocado-commerce\index.php(15): get_header()
+#4 F:\xampp\htdocs\Woocommerce theme\wp-includes\template-loader.php(78): include('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\Woocommerce theme\wp-blog-header.php(19): require_once('F:\\xampp\\htdocs...')
+#6 F:\xampp\htdocs\Woocommerce theme\index.php(17): require('F:\\xampp\\htdocs...')
+#7 {main}
+  thrown in F:\xampp\htdocs\Woocommerce theme\wp-content\themes\avocado-commerce\header.php on line 56
+
+2019-07-01T19:20:30+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_dicrectory_uri() in F:\xampp\htdocs\Woocommerce theme\wp-content\themes\avocado-commerce\header.php:56
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-includes\template.php(722): require_once()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-includes\template.php(671): load_template('F:\\xampp\\htdocs...', true)
+#2 F:\xampp\htdocs\Woocommerce theme\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\themes\avocado-commerce\index.php(15): get_header()
+#4 F:\xampp\htdocs\Woocommerce theme\wp-includes\template-loader.php(78): include('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\Woocommerce theme\wp-blog-header.php(19): require_once('F:\\xampp\\htdocs...')
+#6 F:\xampp\htdocs\Woocommerce theme\index.php(17): require('F:\\xampp\\htdocs...')
+#7 {main}
+  thrown in F:\xampp\htdocs\Woocommerce theme\wp-content\themes\avocado-commerce\header.php on line 56
+
