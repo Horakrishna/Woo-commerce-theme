@@ -124,3 +124,8 @@ final class Avocado_Commerce_Extension {
 
 Avocado_Commerce_Extension::instance();
 
+function avocado_toolkit_scripts(){
+	wp_enqueue_style('avocado-toolkit', plugin_dir_url(__FILE__).'/assets/css/avocado-toolkit.css', array(),'20145548');
+}
+add_action('wp_enqueue_scripts','avocado_toolkit_scripts');
+

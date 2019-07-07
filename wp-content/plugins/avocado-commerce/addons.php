@@ -86,25 +86,38 @@ class Avocado_slider_Widget extends \Elementor\Widget_Base {
             ]
         );
         $repeater->add_control(
+            'slide_btn_text',
+            [
+                'label' => __( 'Slide botton Text', 'plugin-domain' ),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => __( 'Read More' , 'plugin-domain' ),
+            ]
+        );
+        $repeater->add_control(
+            'slide_link',
+            [
+                'label' => __( 'Slide link', 'plugin-domain' ),
+                'type' => \Elementor\Controls_Manager::TEXT,
+            ]
+        );
+        $repeater->add_control(
             'slide_img',
             [
                 'label' => __( 'Slide Image', 'plugin-domain' ),
                 'type' => \Elementor\Controls_Manager::MEDIA,
-                'default' => __( 'Slide Image' , 'plugin-domain' ),
-                'show_label' => true,
             ]
         );
 
         $this->add_control(
             'slides',
             [
-                'label' => __( 'slides', 'plugin-domain' ),
+                'label' => __( 'Slides', 'plugin-domain' ),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
                     [
-                        'list_title' => __( 'Slide #1', 'plugin-domain' ),
-                        'list_content' => __( 'Slide content', 'plugin-domain' ),
+                        'list_title' => __( 'Slide Title', 'plugin-domain' ),
+                        'slide_btn_text' => __( 'Read More', 'plugin-domain' ),
                     ]
                 ],
             ]
@@ -112,47 +125,55 @@ class Avocado_slider_Widget extends \Elementor\Widget_Base {
 
 
         $this->end_controls_section();
-
-    }
+ }
 
     protected function render() {
 
         $settings = $this->get_settings_for_display();
 
-        if ($settings['slides']) {
-
+        if (!empty($settings['slides'])) {
+            $html ='';
             $dynamic_id =rand(777888,88775877);
 
             if (count($settings['slides']) >1 ) {
                 
-                echo '<script>
+                $html.='<script>
                     jQuery(document).ready(function($){
-                        $("#slides-'.$dynamic_id.'").slick();
-
+                        $("#slides-'.$dynamic_id.'").slick({
+                          infinite: true,
+                          speed: 500,
+                          fade: true,
                         });
+                            
+                   });
                 </script>';
             }
 
-            echo '<div id="slides-'.$dynamic_id.'" class="slides">';
-
-            foreach ($settings['slides'] as $slides) {
+             $html.='<div class="slider-wrapper">
+                <div id="slides-'.$dynamic_id.'" class="slides">';
+                 foreach ($settings['slides'] as $slides) {
 
                  //echo var_dump($slides['slide_img']);  
-                echo '<div class="single-slide-item" style="background-image:url('.wp_get_attachment_image_url($slides['slide_img']['id'],'large').')">
-                    <div class="row">
-                        <div class="col my-auto">
-                          '.wpautop($slides['slide_content']).'
+                $html.='<div class="single-slide-item" style="background-image:url('.wp_get_attachment_image_url($slides['slide_img']['id'],'large').')">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col my-auto">
+                               <div class="slide-text">
+                               <h2>'.$slides['slide_title'].'</h2>  
+                              '.wpautop($slides['slide_content']).'
+                              <a href="'.$slides['slide_link'].'" class="box-btn">'.$slides['slide_btn_text'].'</a>
+                            </div>
                         </div>
-                    </div>   
-                        <div class="slide-info">
-                            <h3>'.$slides['slide_title'].'</h3>
-                            '.$slides['slide_desc'].'
-                        </div>
-                    
-                </div>';
+                    </div>
+                </div>
+            </div>';
             }
-     echo '</div>';
+         $html.='</div><img class="slider-shape" src="'.get_template_directory_uri().'/assets/img/slider-botton.png" alt=""></div>';
+        }else{
+            $html ='<div class="alert alert-warning">Please Add slides.</div>';
         }
+
+        echo $html;
 
     }
 

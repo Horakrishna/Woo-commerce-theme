@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+/* slider Section Start */
+.single-slide-item .row {
+    height: 750px;
+}
+
+.single-slide-item {
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+.slides {
+    position: relative;
+}
+
+a.box-btn {
+    display: inline-block;
+    background: #ee4e23;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.single-slide-item h2 {
+    font-size: 120px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.slide-text {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.slide-text .box-btn {
+    font-size: 15px;
+}
+
+.single-slide-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: .5;
+    z-index: -1;
+}
+/* slider Section End */
+.slick-prev {
+    left: -25px;
+}
+.slick-next {
+    right: -25px;
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: #000;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
