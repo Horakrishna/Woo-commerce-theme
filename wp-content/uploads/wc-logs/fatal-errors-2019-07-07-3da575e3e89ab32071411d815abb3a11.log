@@ -1,0 +1,33 @@
+2019-07-07T12:58:57+00:00 CRITICAL Uncaught Error: Class '__\Elementor\Controls_Manager' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\addons.php:140
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1919): Avocado_slider_Widget->_register_controls()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(485): Elementor\Controls_Stack->init_controls()
+#2 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\widget-base.php(160): Elementor\Controls_Stack->get_stack()
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(278): Elementor\Widget_Base->get_stack()
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1954): Elementor\Controls_Stack->get_controls()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1018): Elementor\Controls_Stack->san in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\addons.php on line 140
+
+2019-07-07T14:14:13+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\addons.php on line 281
+
+2019-07-07T14:14:36+00:00 CRITICAL syntax error, unexpected end of file in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\addons.php on line 280
+
+2019-07-07T14:15:22+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\addons.php on line 282
+
+2019-07-07T18:14:42+00:00 CRITICAL Uncaught Error: Class 'Controls_Manager' not found in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\content-block.php:63
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1919): Avocado_content_block_Widget->_register_controls()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(485): Elementor\Controls_Stack->init_controls()
+#2 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\widget-base.php(160): Elementor\Controls_Stack->get_stack()
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(274): Elementor\Widget_Base->get_stack(false)
+#4 [internal function]: Elementor\Widgets_Manager->ajax_get_widget_types_controls_config(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Ar in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\content-block.php on line 63
+
+2019-07-07T18:34:56+00:00 CRITICAL Uncaught Error: Call to undefined function wpauto() in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\content-block.php:99
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\widget-base.php(501): Avocado_content_block_Widget->render()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\base\document.php(207): Elementor\Widget_Base->render_content()
+#2 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\managers\widgets.php(323): Elementor\Core\Base\Document->render_element(Array)
+#3 [internal function]: Elementor\Widgets_Manager->ajax_render_widget(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\core\common\modules\ajax\module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 F:\xampp\htdocs\Woocommerce theme\wp-includes\class-wp-hook.php(286): Elementor\Core\Common\Modules\Ajax\Mod in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\content-block.php on line 99
+

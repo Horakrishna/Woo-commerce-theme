@@ -53,51 +53,93 @@ a.box-btn {
     z-index: -1;
 }
 /* slider Section End */
-.slick-prev {
-    left: -25px;
-}
-.slick-next {
-    right: -25px;
-}
-.slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
+/*  Slick Slider Style */
+.slides .slick-arrow {
     position: absolute;
     top: 50%;
-    display: block;
-    width: 25px;
+    left: -25px;
     height: 25px;
-    border-radius: 50%;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: #fff;
+    width: 25px;
     background: #000;
-}
-.slick-prev:before
-{
-    content: '←';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
-}
-.slick-dots li button:hover, .slick-dots li button:focus {
-    outline: none;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
 }
 
-.slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: #000;
-    border: 0;
-    outline: none;
-    background: transparent;
+.slides .slick-arrow.fa-angle-right {
+    left: auto;
+    right: -25px;
 }
+
+ul.slick-dots {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+ul.slick-dots li button {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: #7a7a7a;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 5px;
+    cursor: pointer;
+}
+ul.slick-dots li {
+    display: inline-block;
+}
+ 
+ul.slick-dots li.slick-active button {
+    background-color: #000;
+}
+/* Slick Slider Style */
+/* Content Block Style */
+.content-box-bg {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 85%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.content-box-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 300px;
+    padding-bottom: 50px;
+}
+
+.content-box-content h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+.content-box-content h5 {
+    font-family: inherit;
+    font-size: 16px;
+    margin: 0;
+}
+.content-box-theme-2 .content-box-bg {
+    height: 70%;
+    width: 100%;
+    top:0;
+}
+
+.content-box-theme-2 .content-box-content {
+    text-align: center;
+   
+}
+.content-box-theme-2 .content-box-content h1{
+    font-size:76px;
+    color:#000;
+
+}
+/* Content Block Style */

@@ -2,12 +2,12 @@
 /**
  * Plugin Name: Avocado Commerce Elementor
  * Description: Custom Elementor extension For wocommerce Theme.
- * Plugin URI:  https://pallab.com/
- * Version:     1.0.0
- * Author:      Pallab
- * Author URI:  https://pallab.com/
+ * Plugin URI :  https://pallab.com/
+ * Version    :  1.0.0
+ * Author     :  Pallab
+ * Author URI :  https://pallab.com/
  * Text Domain: avocado-commerce-extension
- */
+ */ 
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -114,10 +114,12 @@ final class Avocado_Commerce_Extension {
 	public function init_widgets() {
 
 		// Include Widget files
-		require_once( __DIR__ . '/addons.php' );
+		require_once( __DIR__ . '/widgets/slider-addons.php' );
+		require_once( __DIR__ .'/widgets/content-block.php');
 
 		// Register widget
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_slider_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_content_block_Widget() );
 
 	}
 }

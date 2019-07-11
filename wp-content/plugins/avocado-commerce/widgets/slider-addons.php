@@ -125,6 +125,83 @@ class Avocado_slider_Widget extends \Elementor\Widget_Base {
 
 
         $this->end_controls_section();
+
+        $this->start_controls_section(
+            'Slide_setting',
+            [
+                'label' => __( 'Slide Setting', 'plugin-name' ),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+        $this->add_control(
+           'fade',
+           [
+            'label'       =>__('Fade Effect?','plugin-domain'),
+            'type'        =>\Elementor\Controls_Manager::SWITCHER,
+            'label_on'    =>__('Yes','your-plugin'),
+            'label_off'   =>__('No','your-plugin'),
+            'return_value'=>'yes',
+            'default'     =>'on'
+           ]
+        );
+        $this->add_control(
+           'loop',
+           [
+            'label'       =>__('Loop?','plugin-domain'),
+            'type'        =>\Elementor\Controls_Manager::SWITCHER,
+            'label_on'    =>__('Yes','your-plugin'),
+            'label_off'   =>__('No','your-plugin'),
+            'return_value'=>'yes',
+            'default'     =>'on'
+           ]
+        );
+        $this->add_control(
+           'arrows',
+           [
+            'label'       =>__('show arrows?','plugin-domain'),
+            'type'        =>\Elementor\Controls_Manager::SWITCHER,
+            'label_on'    =>__('Show','your-plugin'),
+            'label_off'   =>__('Hide','your-plugin'),
+            'return_value'=>'yes',
+            'default'     =>'yes'
+           ]
+        );
+        $this->add_control(
+           'dots',
+           [
+            'label'       =>__('show dots?','plugin-domain'),
+            'type'        =>\Elementor\Controls_Manager::SWITCHER,
+            'label_on'    =>__('Show','your-plugin'),
+            'label_off'   =>__('Hide','your-plugin'),
+            'return_value'=>'yes',
+            'default'     =>'yes'
+           ]
+        );
+          $this->add_control(
+           'autoplay',
+           [
+            'label'       =>__('Autoplay?','plugin-domain'),
+            'type'        =>\Elementor\Controls_Manager::SWITCHER,
+            'label_on'    =>__('yes','your-plugin'),
+            'label_off'   =>__('no','your-plugin'),
+            'return_value'=>'yes',
+            'default'     =>'yes'
+           ]
+        );
+
+         $this->add_control(
+           'autoplay_time',
+           [
+            'label'       =>__('Autoplay Time?','plugin-domain'),
+            'type'        =>\Elementor\Controls_Manager::TEXT,
+            'default'     =>'5000',
+            'condition'   =>[
+                'autoplay' =>'yes'
+            ],
+
+          ]
+        );
+         $this->end_controls_section();
  }
 
     protected function render() {
@@ -136,13 +213,42 @@ class Avocado_slider_Widget extends \Elementor\Widget_Base {
             $dynamic_id =rand(777888,88775877);
 
             if (count($settings['slides']) >1 ) {
-                
+                if ($settings['fade']== 'yes') {
+                     $fade ='true';
+                 } else{
+                    $fade='false';
+                 }
+                 if ($settings['loop']== 'yes') {
+                     $loop ='true';
+                 } else{
+                    $loop='false';
+                 }
+                 if ($settings['arrows']== 'yes') {
+                     $arrows ='true';
+                 } else{
+                    $arrows='false';
+                 }
+                 if ($settings['dots']== 'yes') {
+                     $dots ='true';
+                 } else{
+                    $dots='false';
+                 }
+                 if ($settings['autoplay']== 'yes') {
+                     $autoplay ='true';
+                 } else{
+                    $autoplay='false';
+                 }
+
                 $html.='<script>
                     jQuery(document).ready(function($){
                         $("#slides-'.$dynamic_id.'").slick({
-                          infinite: true,
-                          speed: 500,
-                          fade: true,
+                          arrows   :'.$arrows.',
+                          prevArrow:"<i class=\'fa fa-angle-left\'></i>",
+                          nextArrow:"<i class=\'fa fa-angle-right\'></i>",
+                          dots     :'.$dots.',
+                          fade     :'.$fade.',
+                          autoplay :'.$autoplay.',
+                          loop     : '.$loop.',
                         });
                             
                    });
@@ -176,5 +282,4 @@ class Avocado_slider_Widget extends \Elementor\Widget_Base {
         echo $html;
 
     }
-
 }
