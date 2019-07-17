@@ -116,10 +116,13 @@ final class Avocado_Commerce_Extension {
 		// Include Widget files
 		require_once( __DIR__ . '/widgets/slider-addons.php' );
 		require_once( __DIR__ .'/widgets/content-block.php');
-
+		require_once( __DIR__ .'/widgets/products-addon.php');
 		// Register widget
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_slider_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_content_block_Widget() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_products_Widget() );
+
+		
 
 	}
 }

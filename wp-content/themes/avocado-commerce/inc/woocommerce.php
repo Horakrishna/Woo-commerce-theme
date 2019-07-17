@@ -55,7 +55,7 @@ add_action( 'wp_enqueue_scripts', 'avocado_commerce_woocommerce_scripts' );
  *
  * @link https://docs.woocommerce.com/document/disable-the-default-stylesheet/
  */
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+//add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 /**
  * Add 'woocommerce-active' class to the body tag.
@@ -268,3 +268,16 @@ if ( ! function_exists( 'avocado_commerce_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+//Wishlist after Button
+
+function avocado_browse_wishlist_label(){
+	return "<i class='fa fa-heart'></i>";
+};
+add_filter('yith-wcwl-browse-wishlist-label','avocado_browse_wishlist_label',10,1);
+
+//Compare after Button
+function avocado_compare_label(){
+	return "";
+};
+add_filter('yith_woocompare_compare_added_label','avocado_compare_label',10,1);
