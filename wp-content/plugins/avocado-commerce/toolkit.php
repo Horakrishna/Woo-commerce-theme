@@ -121,8 +121,7 @@ final class Avocado_Commerce_Extension {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_slider_Widget() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_content_block_Widget() );
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Avocado_products_Widget() );
-
-		
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \ Avocado_selling_products_Widget() );	
 
 	}
 }

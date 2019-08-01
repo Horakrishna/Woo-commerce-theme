@@ -1,0 +1,11 @@
+2019-07-20T12:18:35+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 257
+
+2019-07-20T12:19:53+00:00 CRITICAL Uncaught Error: Call to a member function get_controls() on null in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php:105
+Stack trace:
+#0 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1919): Avocado_products_Widget->_register_controls()
+#1 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(485): Elementor\Controls_Stack->init_controls()
+#2 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\widget-base.php(160): Elementor\Controls_Stack->get_stack()
+#3 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(278): Elementor\Widget_Base->get_stack()
+#4 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1954): Elementor\Controls_Stack->get_controls()
+#5 F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\elementor\includes\base\controls-stack.php(1018): Elementor\ in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 105
+

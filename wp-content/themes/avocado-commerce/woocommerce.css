@@ -124,3 +124,9 @@ h2.woocommerce-loop-product__title {
 .product-buttons .compare:hover:after {
     background-color: #333
 }
+
+
+.woocommerce ul.products.slick-slider li.product {
+    margin-left: 0;
+    padding: 10px;
+}

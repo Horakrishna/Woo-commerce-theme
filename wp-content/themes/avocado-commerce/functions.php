@@ -131,6 +131,7 @@ function avocado_commerce_scripts() {
 
 	wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20151215', true );
+	
 	wp_enqueue_script( 'Slick-js', get_template_directory_uri() . '/assets/js/slick.min.js', array(), '20251215', true );
 	wp_enqueue_style( 'avocado-commerce-style', get_stylesheet_uri() );
 

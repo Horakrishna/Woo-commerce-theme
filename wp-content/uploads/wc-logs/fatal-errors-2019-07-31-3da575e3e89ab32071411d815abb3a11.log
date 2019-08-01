@@ -1,0 +1,12 @@
+2019-07-31T02:13:28+00:00 CRITICAL syntax error, unexpected '3' (T_LNUMBER), expecting ',' or ';' in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 226
+
+2019-07-31T02:34:51+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 247
+
+2019-07-31T02:35:20+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 249
+
+2019-07-31T02:36:36+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 249
+
+2019-07-31T02:36:40+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 249
+
+2019-07-31T02:36:59+00:00 CRITICAL syntax error, unexpected end of file in F:\xampp\htdocs\Woocommerce theme\wp-content\plugins\avocado-commerce\widgets\products-addon.php on line 249
+

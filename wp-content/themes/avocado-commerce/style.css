@@ -55,6 +55,9 @@ body {
     font-weight: 300;
     font-size: 15px;
 }
+h1.entry-title {
+    display: none;
+}
 .site-header .header-top {
     padding: 11px 0;
 }
