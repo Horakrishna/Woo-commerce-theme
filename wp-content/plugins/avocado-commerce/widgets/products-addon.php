@@ -35,7 +35,7 @@ if (class_exists('WooCommerce')) {
     ));
 
     $query_query =get_posts($args);
-    $dropdown_array=array(''=> 'Select Item');
+    $dropdown_array=array();
     if ($query_query) {
       foreach ($query_query as $query) {
        
@@ -204,49 +204,43 @@ class Avocado_selling_products_Widget extends \Elementor\Widget_Base {
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
-
-          $this->add_control(
-              'from',
-
-              [
-                  'label' => __( 'Products From', 'plugin-name' ),
-                  'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-                  'options'=>[
-
-                          'select'  => __('Select Product', 'plugin-domain'),
-                          'category'=> __('Select Categories','plugin-domain'),
-                  ],
-                  'default' =>'select'
-              ]
-          );
-
         $this->add_control(
-            'deal', [
-                'label' => __( 'Include Deal Products', 'plugin-domain' ),
-                'type' => \Elementor\Controls_Manager::SWITCHER,
-                'default' =>'YES',
+            'from',
+
+            [
+                'label' => __( 'Product From', 'plugin-name' ),
+                'tab' => \Elementor\Controls_Manager::SELECT,
+                'options'=>[
+                    'select'  =>__('Select Products','plugin-domain'),
+                    'category'=>__('Select Categories','plugin-domain')
+                ],
+                'default' =>'select',
             ]
         );
 
         $this->add_control(
                 'p_ids',
                 [
-                    'label' => __( 'Select Products', 'plugin-domain' ),
+                    'label' => __( 'And/or Select Products', 'plugin-domain' ),
                     'type' => \Elementor\Controls_Manager::SELECT2,
                     'multiple' => true,
                     'options' =>Avocado_product_list(),
-                    'default' =>['all'],
+                    'condition' =>[
+                        'from' =>'select',
+                    ],
                ]
           );
 
         $this->add_control(
                 'cat_ids',
                 [
-                    'label' => __( 'Select Product Categories', 'plugin-domain' ),
+                    'label' => __( 'And/or Select Product Categories', 'plugin-domain' ),
                     'type' => \Elementor\Controls_Manager::SELECT2,
                     'multiple' => true,
                     'options' =>avocado_product_cat_list(),
-                    'default' =>['all'],
+                    'condition' =>[
+                        'from' =>'category',
+                    ],
                ]
           );
 
@@ -282,28 +276,46 @@ class Avocado_selling_products_Widget extends \Elementor\Widget_Base {
     protected function render() {
 
         $settings = $this->get_settings_for_display();
-
-          if ($settings['from'] == 'category') {
-           $query = new WP_Query(array(
-              'post_per_page'=> 10,
-              'post_type'    =>'product',
-              'tax_query'    =>array(
-                array(
-                  'taxonomy' =>'product_cat',
-                  'field'    =>'term_id',
-                  'terms'    =>$settings['cat_ids']
-                )
-              )
-         ));
-
-        }else{
-          $query =new WP_Query(array(
-              'post_per_page' =>10,
-              'post_type'     =>'product',
-              'post_in'       =>$settings['p_ids'],
-          ));
-        }
        
+        if($settings['from'] =='category'){
+            $q = new WP_Query(array(
+                'posts_per_page' =>10,
+                'post_type'      =>'product',
+                'tax_query'      => array(
+                        array(
+                            'taxonomy' => 'product_cat',
+                            'field'    => 'term_id',
+                            'terms'    => $settings['cat_ids'],
+                        )
+                    ),
+            ));
+        }else{
+            $q = new WP_Query(array(
+                'posts_per_page' =>10,
+                'post_type'      =>'product',
+                'post__in'       =>$settings['p_ids'],
+            ));
+        }
+        
+        $rand   =rand(88788878,889777887);
+
+        $html ='<div class="product-carousel" id="product-carousel-'.$rand.'">';
+        while($q->have_posts()): $q->the_post(); 
+
+          $html .='<div class="single-c-product">
+                
+                <h2>'.get_the_title().'</h2>
+
+                </div>';
+          
+        endwhile;
+       wp_reset_query();
+
+       $html .='</div>';
+        if($settings['from']=='category' && empty($settings['cat_ids'])){
+            $html ='<div class="alert alert-warning"><p>Please Select Your Product Category</p></div>';
+        }
+       echo $html;
 
   }         
 
